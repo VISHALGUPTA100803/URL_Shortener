@@ -37,6 +37,10 @@ A simple URL shortener service built with **Node.js (Express)** and **MongoDB**.
 
 #### Shorten URLs  
 **Endpoint:** `POST /shorten`
+This endpoint allows authenticated users to shorten a long URL into a unique short code. The request must include a valid JWT token in the **Authorization** header for authentication. The generated short URL will automatically expire after **7 days**.  
+
+**Authorization:** Bearer Token (JWT)  
+**Rate Limiting:** A user can shorten up to **5 URLs per hour** based on their IP address.
 ![Screenshot (557)](https://github.com/user-attachments/assets/c9f5f538-fec3-484b-803f-b7e80f280b70) ![Screenshot (558)](https://github.com/user-attachments/assets/dc05315a-b6b2-4352-b693-02d912fb37e3)
 #### Redirect to Original URL  
 **Endpoint:** `GET /:shortCode`  
