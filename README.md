@@ -4,7 +4,7 @@ A simple URL shortener service built with **Node.js (Express)** and **MongoDB**.
 
 ## Live Demo
 
-🔗 [Try the API here](https://url-shortener-thzn.onrender.com/)
+🔗 [Try the API here](https://url-shortener-thzn.onrender.com)
 
 ## Features
 
@@ -15,11 +15,6 @@ A simple URL shortener service built with **Node.js (Express)** and **MongoDB**.
 - **Rate Limiting** → Users can shorten up to **5 URLs per hour**
 - **Expiry Feature** → Shortened URLs expire after **7 days**
 
-## Tech Stack
-
-- **Backend:** Node.js (Express)
-- **Database:** MongoDB
-- **Authentication:** JWT-based
 
 ## Postman Screenshots  
 
