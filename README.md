@@ -28,7 +28,7 @@ A simple URL shortener service built with **Node.js (Express)** and **MongoDB**.
 
 
 ---
-#### Register a new user  
+### Register a new user  
 
 **Endpoint:** `POST /auth/register`
 
@@ -40,7 +40,7 @@ This endpoint allows users to create a new account by providing an email and pas
 
 ---
 
-#### Login existing user  
+### Login existing user  
 
 **Endpoint:** `POST /auth/login`
 
@@ -53,7 +53,7 @@ This endpoint allows existing users to log in by providing their registered emai
 
 ---
 
-#### Shorten URLs  
+### Shorten URLs  
 
 **Endpoint:** `POST /shorten`
 
@@ -66,7 +66,7 @@ This endpoint allows authenticated users to shorten a long URL into a unique sho
 
 ---
 
-#### Redirect to Original URL  
+### Redirect to Original URL  
 
 **Endpoint:** `GET /:shortCode`  
 
@@ -76,7 +76,7 @@ This endpoint redirects the user to the original long URL associated with the pr
 
 ---
 
-#### Rate Limiting
+### Rate Limiting
 
 This API implements **rate limiting** to prevent excessive requests from users.  
 
@@ -88,7 +88,7 @@ If the rate limit is exceeded, the server will respond with an error
 
 ---
 
-#### View URL stats  
+### View URL stats  
 
 **Endpoint:** `GET /stats/:shortCode`
 
