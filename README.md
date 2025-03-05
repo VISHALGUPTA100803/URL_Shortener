@@ -25,20 +25,31 @@ A simple URL shortener service built with **Node.js (Express)** and **MongoDB**.
 
 
 
+
+
+
 #### Register a new user  
-`POST /auth/register`
+**Endpoint:** `POST /auth/register`
 ![Screenshot (555)](https://github.com/user-attachments/assets/d8d101e2-3077-4aa1-97a1-cce48495284f)
 #### Login existing user  
-`POST /auth/login`
+**Endpoint:** `POST /auth/login`
 ![Screenshot (556)](https://github.com/user-attachments/assets/27218aa8-d890-441b-9085-87cd7ccf4188)
 
 #### Shorten URLs  
-`POST /shorten`
-#### Redirect to original URL  
-`GET /:shortCode`
+**Endpoint:** `POST /shorten`
+![Screenshot (557)](https://github.com/user-attachments/assets/c9f5f538-fec3-484b-803f-b7e80f280b70) ![Screenshot (558)](https://github.com/user-attachments/assets/dc05315a-b6b2-4352-b693-02d912fb37e3)
+#### Redirect to Original URL  
+**Endpoint:** `GET /:shortCode`  
+**Example:** [http://url-shortener-thzn.onrender.com/EFEFlGoWT](http://url-shortener-thzn.onrender.com/EFEFlGoWT)  
+This endpoint redirects the user to the original long URL associated with the provided short code. 
+
+#### View URL stats  
+**Endpoint:** `GET /stats/:shortCode`
+![Screenshot (559)](https://github.com/user-attachments/assets/31ec2ae6-27c2-405e-9fb0-91f3f16704de)
+
 #### Rate Limiting
 
 ![Screenshot (554)](https://github.com/user-attachments/assets/38336317-617d-4c22-a3d4-8b711c3fa350)
 
-#### View URL stats  
-`GET /stats/:shortCode`
+
+
